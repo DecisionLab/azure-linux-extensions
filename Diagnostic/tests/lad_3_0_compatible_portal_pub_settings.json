@@ -1,5 +1,11 @@
 {
-  "StorageAccount": "__DIAGNOSTIC_STORAGE_ACCOUNT__",
+  "sink" : [
+    {
+      "name": "eventhubsink",
+      "type": "EventHub",
+      "sasUrl": "__EVENT_HUB_SAS_TOKEN__"
+    }
+  ],
   "ladCfg": {
     "diagnosticMonitorConfiguration": {
       "eventVolume": "Medium", 
