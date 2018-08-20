@@ -1,5 +1,7 @@
 {
   "storageAccount": "gisactivitydiagnosticlog",
+  "storageAccountName" : "gisactivitydiagnosticlog",
+  "storageAccountSasToken": "__STORAGE_SAS_TOKEN__",
   "sink" : [
     {
       "name": "eventhubsink",
