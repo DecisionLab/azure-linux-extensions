@@ -1,6 +1,5 @@
 {
-  "storageAccountName": "gisactivitydiagnosticlog",
-  "storageAccountSasToken": "sv=2017-11-09&ss=bfqt&srt=sco&sp=rwlacup&se=2019-08-19T06:00:15Z&st=2018-08-20T22:00:15Z&spr=https&sig=tV6OpsnWVOFWK4ZK%2FZSLVm1fb30eBoT9VMj9YoIFKmU%3D",
+  "storageAccount": "gisactivitydiagnosticlog",
   "sink" : [
     {
       "name": "eventhubsink",
