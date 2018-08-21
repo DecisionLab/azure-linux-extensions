@@ -6,7 +6,7 @@
     {
       "name": "insights-telemetry-lad",
       "type": "EventHub",
-      "sasUrl": "__EVENT_HUB_SAS_TOKEN__"
+      "sasURL": "__EVENT_HUB_SAS_TOKEN__"
     }
   ],
   "fileLogs": [
