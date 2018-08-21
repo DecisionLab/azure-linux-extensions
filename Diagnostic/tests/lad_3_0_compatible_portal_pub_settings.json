@@ -16,5 +16,60 @@
       "sinks": "insights-telemetry-lad"
     }
   ],
-    "sampleRateInSeconds": 15
+  "sampleRateInSeconds": 15,
+  "ladCfg": {
+    "diagnosticMonitorConfiguration": {
+      "performanceCounters": {
+        "sinks": "FileLogJsonBlob,insights-telemetry-lad",
+        "performanceCounterConfiguration": [
+          {
+            "unit": "Percent",
+            "type": "builtin",
+            "counter": "PercentProcessorTime",
+            "counterSpecifier": "/builtin/Processor/PercentProcessorTime",
+            "annotation": [
+              {
+                "locale": "en-us",
+                "displayName": "Aggregate CPU %utilization"
+              }
+            ],
+            "condition": "IsAggregate=TRUE",
+            "class": "Processor"
+          },
+          {
+            "unit": "Bytes",
+            "type": "builtin",
+            "counter": "UsedSpace",
+            "counterSpecifier": "/builtin/FileSystem/UsedSpace",
+            "annotation": [
+              {
+                "locale": "en-us",
+                "displayName": "Used disk space on /"
+              }
+            ],
+            "condition": "Name=\"/\"",
+            "class": "Filesystem"
+          }
+        ]
+      },
+      "metrics": {
+        "metricAggregation": [
+          {
+            "scheduledTransferPeriod": "PT1H"
+          },
+          {
+            "scheduledTransferPeriod": "PT1M"
+          }
+        ],
+        "resourceId": "__RESOURCE_ID__"
+      },
+      "eventVolume": "Large",
+      "syslogEvents": {
+        "sinks": "SyslogJsonBlob",
+        "syslogEventConfiguration": {
+          "LOG_USER": "LOG_INFO"
+        }
+      }
+    }
+  }
 }
