@@ -12,8 +12,7 @@
   "fileLogs": [
     {
       "file": "/etc/testfile.txt",
-      "table": "varlogaudit",
-      "sinks": "insights-telemetry-lad"
+      "table": "varlogaudit"
     }
   ],
     "sampleRateInSeconds": 15
