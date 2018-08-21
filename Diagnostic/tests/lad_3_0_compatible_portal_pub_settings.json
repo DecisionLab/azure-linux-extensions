@@ -12,7 +12,6 @@
   "fileLogs": [
     {
       "file": "/var/log/audit/audit.log",
-      "table": "varlogaudit",
       "sinks": "insights-telemetry-lad"
     }
   ],
