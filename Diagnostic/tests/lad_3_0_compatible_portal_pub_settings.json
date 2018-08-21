@@ -11,8 +11,16 @@
   ],
   "fileLogs": [
     {
-      "file": "/etc/testfile.txt",
+      "file": "/var/log/audit/audit.log",
       "table": "varlogaudit"
+    },
+    {
+      "file": "/var/log/messages",
+      "table": "varlogmessages"
+    },
+    {
+      "file": "/var/log/secure",
+      "table": "varlogsecure"
     }
   ],
     "sampleRateInSeconds": 15
