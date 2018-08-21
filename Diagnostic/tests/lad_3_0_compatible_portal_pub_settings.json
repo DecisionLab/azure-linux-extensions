@@ -4,7 +4,7 @@
   "storageAccountSasToken": "__STORAGE_SAS_TOKEN__",
   "sink" : [
     {
-      "name": "eventhubsink",
+      "name": "insights-telemetry-lad",
       "type": "EventHub",
       "sasUrl": "__EVENT_HUB_SAS_TOKEN__"
     }
@@ -13,17 +13,17 @@
     {
       "file": "/var/log/messages",
       "table": "varlogmessages",
-      "sinks": "eventhubsink"
+      "sinks": "insights-telemetry-lad"
     },
     {
       "file": "/var/log/secure",
       "table": "varlogsecure",
-      "sinks": "eventhubsink"
+      "sinks": "insights-telemetry-lad"
     },
     {
       "file": "/var/log/audit/audit.log",
       "table": "varlogaudit",
-      "sinks": "eventhubsink"
+      "sinks": "insights-telemetry-lad"
     }
   ],
     "sampleRateInSeconds": 15
