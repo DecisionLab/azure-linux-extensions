@@ -12,15 +12,18 @@
   "fileLogs": [
     {
       "file": "/var/log/audit/audit.log",
-      "table": "varlogaudit"
+      "table": "varlogaudit",
+      "sinks": "insights-telemetry-lad"
     },
     {
       "file": "/var/log/messages",
-      "table": "varlogmessages"
+      "table": "varlogmessages",
+      "sinks": "insights-telemetry-lad"
     },
     {
       "file": "/var/log/secure",
-      "table": "varlogsecure"
+      "table": "varlogsecure",
+      "sinks": "insights-telemetry-lad"
     }
   ],
     "sampleRateInSeconds": 15
