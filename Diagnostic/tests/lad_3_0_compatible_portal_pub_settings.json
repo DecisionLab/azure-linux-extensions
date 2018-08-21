@@ -1,14 +1,4 @@
 {
-  "storageAccount": "gisactivitydiagnosticlog",
-  "storageAccountName" : "gisactivitydiagnosticlog",
-  "storageAccountSasToken": "__STORAGE_SAS_TOKEN__",
-  "sink" : [
-    {
-      "name": "insights-telemetry-lad",
-      "type": "EventHub",
-      "sasURL": "__EVENT_HUB_SAS_TOKEN__"
-    }
-  ],
   "fileLogs": [
     {
       "file": "/var/log/audit/audit.log",
