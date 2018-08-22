@@ -14,10 +14,6 @@
       "file": "/var/log/secure",
       "table": "varlogsecure",
       "sinks": "FileLogJsonBlob,insights-telemetry-lad"
-    },
-    {
-      "file": "/var/log/azure/Microsoft.Azure.Diagnostics.LinuxDiagnostic/3.0.113/extension.log",
-      "sinks": "insights-telemetry-lad"
     }
   ],
   "sampleRateInSeconds": 15,
