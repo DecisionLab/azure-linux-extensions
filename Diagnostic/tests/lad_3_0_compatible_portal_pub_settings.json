@@ -3,17 +3,17 @@
     {
       "file": "/var/log/audit/audit.log",
       "table": "varlogaudit",
-      "sinks": "FileLogJsonBlob, insights-telemetry-lad"
+      "sinks": "FileLogJsonBlob,insights-telemetry-lad"
     },
     {
       "file": "/var/log/messages",
       "table": "varlogmessages",
-      "sinks": "FileLogJsonBlob, insights-telemetry-lad"
+      "sinks": "FileLogJsonBlob,insights-telemetry-lad"
     },
     {
       "file": "/var/log/secure",
       "table": "varlogsecure",
-      "sinks": "FileLogJsonBlob, insights-telemetry-lad"
+      "sinks": "FileLogJsonBlob,insights-telemetry-lad"
     }
   ],
   "sampleRateInSeconds": 15,
