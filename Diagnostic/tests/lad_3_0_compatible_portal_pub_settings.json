@@ -20,7 +20,7 @@
   "ladCfg": {
     "diagnosticMonitorConfiguration": {
       "performanceCounters": {
-        "sinks": "FileLogJsonBlob",
+        "sinks": "FileLogJsonBlob,insights-telemetry-lad",
         "performanceCounterConfiguration": [
           {
             "unit": "Percent",
