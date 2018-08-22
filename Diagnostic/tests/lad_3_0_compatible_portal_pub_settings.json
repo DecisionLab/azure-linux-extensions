@@ -20,7 +20,7 @@
   "ladCfg": {
     "diagnosticMonitorConfiguration": {
       "performanceCounters": {
-        "sinks": "FileLogJsonBlob,insights-telemetry-lad",
+        "sinks": "FileLogJsonBlob",
         "performanceCounterConfiguration": [
           {
             "unit": "Percent",
@@ -65,7 +65,7 @@
       },
       "eventVolume": "Large",
       "syslogEvents": {
-        "sinks": "SyslogJsonBlob",
+        "sinks": "SyslogJsonBlob,insights-telemetry-lad",
         "syslogEventConfiguration": {
           "LOG_USER": "LOG_INFO"
         }
